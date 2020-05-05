@@ -1,0 +1,24 @@
+s='naman'
+p=s[::-1]
+
+lst1=[x.lower() for x in s]
+lst2=[y.lower() for y in p]
+
+lst3=[]
+
+if(len(lst1)!=0):
+    for i in range(len(lst1)):
+        if(lst1[i]!=lst2[i]):
+            lst3.append(lst2[i])
+
+    if(len(lst3)==0):
+        print('yes')
+    elif(len(lst3)==2):
+        print('partially')
+    else:
+        print('NO')
+        
+else:
+    print('No')
+
+
